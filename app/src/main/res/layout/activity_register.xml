@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio02.RegisterActivity">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registro_de_pedidos"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:hint="@string/nombre_del_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:hint="@string/n_mero_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edtProducts"
+            android:hint="@string/productos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edtCity"
+            android:hint="@string/ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:hint="@string/direcci_n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="@string/registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
